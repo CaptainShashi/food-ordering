@@ -1,0 +1,112 @@
+/* LoginPopup Container */
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Container */
+.login-popup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Title Section */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.title img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+/* Input Fields */
+.login-popup-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-popup-input input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-popup-input input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Checkbox and Terms */
+.login-popup-condition {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-popup-condition input {
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Links and Dynamic Text */
+p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+p span {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+p span:hover {
+  text-decoration: underline;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
